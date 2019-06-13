@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RunInfo>
+	<RunName>big test</RunName>
+	<RunComments>comment this</RunComments>
+	<CellDatasource>S:\LASSA\Clients\UdeM\ORM_development\ArcticFoxRabies\ARM\testfiles\landscapes\Cell80km2L50W20XML.shp.xml</CellDatasource>
+	<OutputFolder>S:\LASSA\Clients\UdeM\ORM_development\ArcticFoxRabies\ARM\testfiles\output\</OutputFolder>
+	<AnimalDatasource>S:\LASSA\Clients\UdeM\ORM_development\ArcticFoxRabies\ARM\testfiles\populations\testrunwCell80km2L50W20K50\testrunwCell80km2L50W20K500001.xml</AnimalDatasource>
+	<StartWithSingleAnimal>false</StartWithSingleAnimal>
+	<RunLength>1</RunLength>
+	<UseRandomSeed>false</UseRandomSeed>
+	<RandomSeed>5344</RandomSeed>
+	<RandomType>0</RandomType>
+	<NTrials>1</NTrials>
+	<ScrambleAnimals>true</ScrambleAnimals>
+	<AbortOnRabiesDieOut>false</AbortOnRabiesDieOut>
+	<Version>1.6</Version>
+</RunInfo>
