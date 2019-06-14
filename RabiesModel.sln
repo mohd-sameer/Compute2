@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RngStream", "RngStream\RngS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIFormARM", "UIFormARM\UIFormARM.csproj", "{A914975E-8CAF-4A86-B39F-99EF5A74756C}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupARM", "SetupARM\SetupARM.vdproj", "{74951667-87D0-4630-AC0D-DACD58551578}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
@@ -98,11 +96,6 @@ Global
 		{A914975E-8CAF-4A86-B39F-99EF5A74756C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A914975E-8CAF-4A86-B39F-99EF5A74756C}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
 		{A914975E-8CAF-4A86-B39F-99EF5A74756C}.SingleImage|Any CPU.Build.0 = Release|Any CPU
-		{74951667-87D0-4630-AC0D-DACD58551578}.CD_ROM|Any CPU.ActiveCfg = Release
-		{74951667-87D0-4630-AC0D-DACD58551578}.Debug|Any CPU.ActiveCfg = Debug
-		{74951667-87D0-4630-AC0D-DACD58551578}.DVD-5|Any CPU.ActiveCfg = Debug
-		{74951667-87D0-4630-AC0D-DACD58551578}.Release|Any CPU.ActiveCfg = Release
-		{74951667-87D0-4630-AC0D-DACD58551578}.SingleImage|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
