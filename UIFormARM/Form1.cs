@@ -223,8 +223,8 @@ namespace UIFormARM
 
 
                     String landscapeFile = returnSettingsData.Tables[4].Rows[3][1].ToString();
-                    Char delimiter = '\\';
-                    String[] landscapeFileItems = landscapeFile.Split(delimiter);
+                    Char[] delimiters = { '\\', '/' };
+                    String[] landscapeFileItems = landscapeFile.Split(delimiters);
                     String landscapeFileItemsLast = landscapeFileItems.Last();
                     textBoxLandscapeFile.Text = landscapeFileItemsLast;
 
@@ -241,7 +241,7 @@ namespace UIFormARM
                         String populationFile = returnSettingsData.Tables[4].Rows[7][1].ToString();
                         //Debug.WriteLine("populationFile = " + populationFile);
                         //Char delimiter = '\\';
-                        String[] populationFileItems = populationFile.Split(delimiter);
+                        String[] populationFileItems = populationFile.Split(delimiters);
                         String populationFileItemsLast = populationFileItems.Last();
                         //Debug.WriteLine("populationFileItemsLast = " + populationFileItemsLast);
                         textBoxPopulationFile.Text = populationFileItemsLast;
