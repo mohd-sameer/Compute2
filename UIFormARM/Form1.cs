@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;//required to connect with Excel file
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -82,7 +81,7 @@ namespace UIFormARM
                         //Code to put Excel worksheets in datatables and then 1 dataset alphabetically                      
 
                         //Make excel settings file into dataset object                                            
-                        returnSettingsData = cExcelSettingsTemplate.Parse(filePath);
+                        returnSettingsData = cCSVSettingsTemplate.Parse(filePath);
 
                         //Retrieve setttings values in the dataset: Table(worksheet), row and column
                         String parameterSetName = returnSettingsData.Tables[4].Rows[0][1].ToString(); //YM
@@ -212,7 +211,7 @@ namespace UIFormARM
                     //Code to put Excel worksheets in datatables and then 1 dataset alphabetically                      
 
                     //Make excel settings file into dataset object                                            
-                    returnSettingsData = cExcelSettingsTemplate.Parse(pathArg[0]);
+                    returnSettingsData = cCSVSettingsTemplate.Parse(pathArg[0]);
 
                     //Retrieve setttings values in the dataset: Table(worksheet), row and column
                     String parameterSetName = returnSettingsData.Tables[4].Rows[0][1].ToString();
