@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Random</name>
+    </assembly>
+    <members>
+        <member name="M:Random.cGaussianPDF.#ctor">
+            <summary>
+            Default constructor.
+            </summary>        
+        </member>
+        <member name="M:Random.cGaussianPDF.xGaussianPDF(System.Int32,System.Single,System.Single)">
+            <summary>
+            EER:
+            Calculate the local pdf value for x given the mean and variance   
+            <param name="x">Value from which to define the local pdf value.</param>
+            <param name="mean">Mean of the overal pdf.</param>
+            <param name="variance">Variance of the overal pdf.</param>
+            </summary>
+        </member>
+        <member name="T:Random.cGaussianRandom">
+            <summary>
+            	Generates a series of pseudo-random deviates with a gaussian distribution of
+            	specified average and variance.  By default, the avarage is 1, the variance
+            	is 0.1 .
+            </summary>
+        </member>
+        <member name="F:Random.cGaussianRandom._rndGenerator">
+            <summary>
+            The random number generator used
+            </summary>
+        </member>
+        <member name="M:Random.cGaussianRandom.#ctor(Random.cRandomBase)">
+            <summary>
+            	Default constructor.  Average = 1, Variance = 0.1 .
+            </summary>
+            <param name="RndGenerator">The random number generator to use</param>
+        </member>
+        <member name="M:Random.cGaussianRandom.#ctor(System.Double,System.Double,Random.cRandomBase)">
+            <summary>
+            	Set Average and Variance Constructor.  Throws an ArgumentOutOfRangeException
+            	exception if the variance is set to less than 0.
+            </summary>
+            <param name="Average">The average value of the returned random deviates.</param>
+            <param name="Variance">The variance of the returned random deviates.</param>
+        </member>
+        <member name="P:Random.cGaussianRandom.Average">
+            <summary>
+            	The average of the generated random deviates.
+            </summary>
+        </member>
+        <member name="P:Random.cGaussianRandom.Variance">
+            <summary>
+            	The variance of the generated random deviates.  An ArgumentOutOfRangeException
+            	will be thrown if an attempt is made to set the value of the variance to less
+            	than zero.
+            </summary>
+        </member>
+        <member name="P:Random.cGaussianRandom.Value">
+            <summary>
+            A random number. 
+            (read-only property)
+            </summary>
+        </member>
+        <member name="M:Random.cGaussianRandom.reset">
+            <summary>
+            	Reset the random number generator.  After reset, the random generator will
+            	repeat the sequence of psuedo-random numbers 
+            </summary>
+        </member>
+        <member name="M:Random.cGaussianRandom.GenerateValue">
+            <summary>
+                Generate an appropriate random number for the defined class 
+            </summary>
+            <returns>The generated random number</returns>
+        </member>
+        <member name="T:Random.cRandomBase">
+            <summary>
+            	Base class for random number generators.  Uses the RngStream random
+            	number generator as its base generator
+            </summary>
+        </member>
+        <member name="F:Random.cRandomBase.Rnd">
+            <summary>
+            The range stream random number generator associated with this random class
+            </summary>
+        </member>
+        <member name="P:Random.cRandomBase.Seed">
+            <summary>
+            Get the seed value for all random number generators created.
+            </summary>
+        </member>
+        <member name="M:Random.cRandomBase.SetSeed(System.Int64)">
+            <summary>
+            Set the seed for all random number generators created.  This method should be called
+            before any random number instances are created.
+            </summary>
+            <param name="SeedVal">The seed value</param>
+            <returns>True if the seed is successfully set, false otherwise</returns>
+        </member>
+        <member name="M:Random.cRandomBase.SetSeed">
+            <summary>
+            Set the seed for all random number generators created based on the current system time.  This
+            method should be called before any random number instances are created.
+            </summary>
+            <returns>True if the seed is successfully set, false otherwise</returns>
+        </member>
+        <member name="M:Random.cRandomBase.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="P:Random.cRandomBase.Value">
+            <summary>
+            A random number.  This property must be implemented in a subclass.
+            (read-only property)
+            </summary>
+        </member>
+        <member name="P:Random.cRandomBase.HighPrecision">
+            <summary>
+            Get or set a boolean value indicating that high precision numbers (53 bit as opposed to 32 bit)
+            should be generated
+            </summary>
+        </member>
+        <member name="P:Random.cRandomBase.InitialState">
+            <summary>
+            Get a string describing the inital state of the random number generator
+            </summary>
+        </member>
+        <member name="P:Random.cRandomBase.StreamSeed">
+            <summary>
+            Get the value of the original seed value for the random stream generator that was used to generate
+            this random generator
+            </summary>
+        </member>
+        <member name="P:Random.cRandomBase.StreamID">
+            <summary>
+            Get the unique interger ID for this stream
+            </summary>
+        </member>
+        <member name="M:Random.cRandomBase.reset">
+            <summary>
+            	Reset the random number generator.  After reset, the random generator will
+            	repeat the sequence of psuedo-random numbers 
+            </summary>
+        </member>
+        <member name="M:Random.cRandomBase.GetValue">
+            <summary>
+            	Get a random number from 0 to 1 by the currently selected random number
+            	generation method.
+            </summary>
+            <returns>A random number from 0 to 1</returns>
+        </member>
+        <member name="M:Random.cRandomBase.internal_reset">
+            <summary>
+            Reset the random number generator
+            </summary>
+        </member>
+        <member name="M:Random.cRandomBase.GenerateValue">
+            <summary>
+            Generate an appropriate random number for the defined class (must be overriden) 
+            </summary>
+            <returns>The generated random number</returns>
+        </member>
+        <member name="T:Random.cUniformRandom">
+            <summary>
+            	Generates a series of pseudo-random deviates with a uniform distribution
+            	between a specified minumum and maximum value.
+            </summary>
+        </member>
+        <member name="M:Random.cUniformRandom.#ctor">
+            <summary>
+            	Default constructor.  MinValue = 0, MaxValue = 1.
+            </summary>
+        </member>
+        <member name="M:Random.cUniformRandom.#ctor(System.Double,System.Double)">
+            <summary>
+            	Set MinValue and MaxValue constructor.  If MinValue is not less than
+            	MaxValue, an ArgumentException exception is raised.
+            </summary>
+            <param name="MinValue">Minimum random value generated.</param>
+            <param name="MaxValue">Maximum random value generated.</param>
+        </member>
+        <member name="P:Random.cUniformRandom.MinValue">
+            <summary>
+            	The minimum value returned by the Value property.  This property is
+            	used in conjunction with the MaxValue property to define the range of
+            	the random numbers returned by the Value property.  Attempting to set
+            	MinValue to a value that is greater than or equal to MaxValue will raise
+            	an ArgumentException exception.  Changing this property does not
+            	reset the random generator.
+            </summary>
+        </member>
+        <member name="P:Random.cUniformRandom.MaxValue">
+            <summary>
+            	The maximum value returned by the Value property.  This property is
+            	used in conjunction with the MinValue property to define the range of
+            	the random numbers returned by the Value property.  Attempting to set
+            	MaxValue to a value that is less than or equal to MinValue will raise
+            	an ArgumentException exception.  Changing this property does not
+            	reset the random generator.
+            </summary>
+        </member>
+        <member name="M:Random.cUniformRandom.IntValue">
+            <summary>
+            Return an integer value between the current Minimum and Maximum values.
+            The current minimum value is rounded up, the current maximum value is rounded down
+            </summary>
+            <returns>An random integer between the current minumum and maximum values</returns>
+        </member>
+        <member name="M:Random.cUniformRandom.IntValue(System.Int32,System.Int32)">
+            <summary>
+            Return and integer value between the specified minimum and maximum values.
+            </summary>
+            <param name="MinValue"></param>
+            <param name="MaxValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Random.cUniformRandom.RealValue(System.Double,System.Double)">
+            <summary>
+            Return a double value between the specified minimum and maximum values
+            </summary>
+            <param name="MinValue">The minimum value</param>
+            <param name="MaxValue">The maximum value</param>
+            <returns>A double value betweem MinValue and MaxValue</returns>
+        </member>
+        <member name="M:Random.cUniformRandom.GenerateValue">
+            <summary>
+            Generate an appropriate random number for the defined class 
+            </summary>
+            <returns>The generated random number</returns>
+        </member>
+    </members>
+</doc>

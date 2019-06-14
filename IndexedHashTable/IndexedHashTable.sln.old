@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexedHashTable", "IndexedHashTable.csproj", "{C8F8232E-BB2E-4EDC-A22B-B098C2BB3F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random", "..\Random\Random.csproj", "{E08E2B76-60B1-4485-A720-D0D9C3375A5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{C8F8232E-BB2E-4EDC-A22B-B098C2BB3F68}.0 = {E08E2B76-60B1-4485-A720-D0D9C3375A5F}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C8F8232E-BB2E-4EDC-A22B-B098C2BB3F68}.Debug.ActiveCfg = Debug|.NET
+		{C8F8232E-BB2E-4EDC-A22B-B098C2BB3F68}.Debug.Build.0 = Debug|.NET
+		{C8F8232E-BB2E-4EDC-A22B-B098C2BB3F68}.Release.ActiveCfg = Release|.NET
+		{C8F8232E-BB2E-4EDC-A22B-B098C2BB3F68}.Release.Build.0 = Release|.NET
+		{E08E2B76-60B1-4485-A720-D0D9C3375A5F}.Debug.ActiveCfg = Debug|.NET
+		{E08E2B76-60B1-4485-A720-D0D9C3375A5F}.Debug.Build.0 = Debug|.NET
+		{E08E2B76-60B1-4485-A720-D0D9C3375A5F}.Release.ActiveCfg = Release|.NET
+		{E08E2B76-60B1-4485-A720-D0D9C3375A5F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

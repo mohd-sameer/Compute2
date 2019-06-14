@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1AC5A1F-4D22-49FC-A3A2-66E133D9F822}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaccoonRabiesRuntime</RootNamespace>
+    <AssemblyName>RaccoonRabiesRuntime</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cAppReport.cs" />
+    <Compile Include="cBasicInfoOutput.cs" />
+    <Compile Include="cBatchAppReport.cs" />
+    <Compile Include="cBatchRabies.cs" />
+    <Compile Include="cBatchRun.cs" />
+    <Compile Include="cBatchRunner.cs" />
+    <Compile Include="cCellID.cs" />
+    <Compile Include="cCellPopulationOutput.cs" />
+    <Compile Include="cCombinedStrategyReader.cs" />
+    <Compile Include="cCullStrategyReader.cs" />
+    <Compile Include="cExcelSettingsTemplate.cs" />
+    <Compile Include="cFertilityStrategyReader.cs" />
+    <Compile Include="cFileOutput.cs" />
+    <Compile Include="cInitialInfection.cs" />
+    <Compile Include="cModelTrial.cs" />
+    <Compile Include="cRabies.cs" />
+    <Compile Include="cRabiesCombinedStrategy.cs" />
+    <Compile Include="cRabiesReportOutput.cs" />
+    <Compile Include="cRabiesVaccineStrategy.cs" />
+    <Compile Include="cStrategyReader.cs" />
+    <Compile Include="cVaccineStrategyReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IndexedHashTable\IndexedHashTable.csproj">
+      <Project>{c8f8232e-bb2e-4edc-a22b-b098c2bb3f68}</Project>
+      <Name>IndexedHashTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RabiesModelCore\RabiesModelCore.csproj">
+      <Project>{3c5522bb-5afd-4d0b-9a26-8316fc6277d3}</Project>
+      <Name>RabiesModelCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoxModelLibrary\FoxModelLibrary.csproj">
+      <Project>{d55aeb3d-737b-4891-86ea-f579f44ffb04}</Project>
+      <Name>FoxModelLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Random\Random.csproj">
+      <Project>{e08e2b76-60b1-4485-a720-d0d9c3375a5f}</Project>
+      <Name>Random</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RngStream\RngStream.csproj">
+      <Project>{97a174b4-c618-4765-a32e-e8940176f102}</Project>
+      <Name>RngStream</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

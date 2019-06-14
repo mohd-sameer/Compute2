@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C5522BB-5AFD-4D0B-9A26-8316FC6277D3}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>RabiesModelCore</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Rabies_Model_Core</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>sgkey.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cAnimal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cAnimalAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cAnimalList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cAnimalsDataSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBackground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cCellList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cCellsDataSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cCellTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cCellTimeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cCombinedStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cCullStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cDisease.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cDiseaseList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cFertilityStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cIDManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cInfection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cInfectionList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cMasterAnimalList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cMasterCellList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cModelDataSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cStrategyList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cSuperCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cSuperCellList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cVaccine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cVaccineList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cVaccineStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cWinterTypeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cYear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cYearList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IndexedHashTable\IndexedHashTable.csproj">
+      <Project>{c8f8232e-bb2e-4edc-a22b-b098c2bb3f68}</Project>
+      <Name>IndexedHashTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Random\Random.csproj">
+      <Project>{e08e2b76-60b1-4485-a720-d0d9c3375a5f}</Project>
+      <Name>Random</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RngStream\RngStream.csproj">
+      <Project>{97a174b4-c618-4765-a32e-e8940176f102}</Project>
+      <Name>RngStream</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

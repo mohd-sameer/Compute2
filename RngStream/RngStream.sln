@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RngStream", "RngStream.csproj", "{97A174B4-C618-4765-A32E-E8940176F102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RngStreamTest", "..\RngStreamTest\RngStreamTest.csproj", "{C067829F-FA92-4385-BB4C-AD7F4AD4BEA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A174B4-C618-4765-A32E-E8940176F102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A174B4-C618-4765-A32E-E8940176F102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A174B4-C618-4765-A32E-E8940176F102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A174B4-C618-4765-A32E-E8940176F102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C067829F-FA92-4385-BB4C-AD7F4AD4BEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C067829F-FA92-4385-BB4C-AD7F4AD4BEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C067829F-FA92-4385-BB4C-AD7F4AD4BEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C067829F-FA92-4385-BB4C-AD7F4AD4BEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,303 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>IndexedHashTable.cIndexedHashTable</TITLE>
+<LINK REL=STYLESHEET HREF="../CommentReport.css" TYPE="text/css">
+</HEAD>
+<BODY topmargin=0 rightmargin=0 leftmargin=0 style="background-image: url(../titletile.jpg); background-repeat:repeat-x; background-position: 0 0;" >
+<DIV CLASS="PageHeading">IndexedHashTable.cIndexedHashTable Class</DIV>
+<DIV CLASS="Description">
+
+   A hashtable class that gives access to a list of items by integer index or by key.
+   Thus, the class behaves as a hashtable or as an array.  Items are ordered in
+   the order in which they are placed in the list unless the InsertAt method is
+   used.  The order of the items in the list may be randomly scrambled with the 
+   ScrambleOrder method.
+<P>
+
+</DIV>
+<IMG src="../GradLeft.jpg" width=7 height=378 alt="" border="0" style="position:absolute; left:10; top:18;z-Index:2">
+<IMG src="../GradTop.jpg" width=352 height=7 alt="" border="0" align="top" style="position:absolute; left:10; top:18; z-index:1">
+<DIV CLASS="Remarks">
+<SPAN CLASS="RemarkHdrX">Access: </SPAN>Public</DIV>
+<DIV CLASS="Remarks">
+<SPAN CLASS="RemarkHdrX">Base Classes: </SPAN>Hashtable</DIV>
+<DIV CLASS="Remarks">
+<SPAN CLASS="RemarkHdrX">Implemented interfaces:  </SPAN>IList</DIV>
+<TABLE CLASS="InfoTable" cellpadding=0 cellspacing=0>
+<TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD valign=top align=left width=9 bgcolor="#cccc66"><IMG SRC="../graycorner.jpg" align=top></TD>
+<TD CLASS="TableLightLabel" WIDTH=206>Members</TD>
+<TD CLASS="TableLightLabel" >Description</TD>
+<TD width=20>&nbsp;</TD>
+</TR>
+<TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP4.HTM" TARGET="CNTFRAME">cIndexedHashTable</A></TD>
+<TD CLASS="TableLightDesc">
+	The default constructor.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP5.HTM" TARGET="CNTFRAME">cIndexedHashTable</A></TD>
+<TD CLASS="TableLightDesc">
+	A constructor allowing the seed for the random number generator that 
+	scrambles the list to be set.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP6.HTM" TARGET="CNTFRAME">cIndexedHashTable</A></TD>
+<TD CLASS="TableLightDesc">
+	A constructor allowing the type and the seed for the random number generator
+	that scrambles the list to be set.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP7.HTM" TARGET="CNTFRAME">InitClass</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP8.HTM" TARGET="CNTFRAME">this</A></TD>
+<TD CLASS="TableLightDesc">
+	Get or set the value of an item in the table indexed by its numeric index.  If
+	Index is less than zero or greater than the number of items in the list minus
+	one, an ArgumentOutOfRangeException exception is raised.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP8.HTM" TARGET="CNTFRAME">this</A></TD>
+<TD CLASS="TableLightDesc">
+	Get or set the value of an item in the table indexed by its key value.  If key
+	is not found in the table, an ArgumentException exception is raised.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP11.HTM" TARGET="CNTFRAME">Seed</A></TD>
+<TD CLASS="TableLightDesc">
+	The seed value of the random number generator used to scramble the order
+	of the items in the table.  Setting this value also resets the random
+	number generator.  Setting this value to less than zero will cause an
+	ArgumentOutOfRangeException exception to be raised.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP13.HTM" TARGET="CNTFRAME">RandomType</A></TD>
+<TD CLASS="TableLightDesc">
+	Get or set the type of random number generator used to scramble the order of
+	the items in the list.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP15.HTM" TARGET="CNTFRAME">ChangeFlag</A></TD>
+<TD CLASS="TableLightDesc">
+	Return the current value of the change status flag.  This is an internal
+	function that can only be called by objects within the IndexedHashTable
+	namespace.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP17.HTM" TARGET="CNTFRAME">Add</A></TD>
+<TD CLASS="TableLightDesc">
+	Add an item to the end of the table with the given key value.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP18.HTM" TARGET="CNTFRAME">Add</A></TD>
+<TD CLASS="TableLightDesc">
+	Add an item to the end of the table.  A unique key value is automatically
+	created for the item.  This key value will take the form 
+	"cIndexedHashTable_Key_XXXX" (where XXXX is a number from 1 to 2^63).
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP19.HTM" TARGET="CNTFRAME">Insert</A></TD>
+<TD CLASS="TableLightDesc">
+	Insert an item into the table at a given position.  A unique key value
+	is automatically created for the item.  This key value will take the form 
+	"cIndexedHashTable_Key_XXXX" (where XXXX is a number from 1 to 2^63).
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP20.HTM" TARGET="CNTFRAME">Insert</A></TD>
+<TD CLASS="TableLightDesc">
+	Insert an item into the table at a given position.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP21.HTM" TARGET="CNTFRAME">Clear</A></TD>
+<TD CLASS="TableLightDesc">
+	Remove all items from the table.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP22.HTM" TARGET="CNTFRAME">GetKey</A></TD>
+<TD CLASS="TableLightDesc">
+	Get the key value of the item at the specified position.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP23.HTM" TARGET="CNTFRAME">Remove</A></TD>
+<TD CLASS="TableLightDesc">
+	Remove the item from the table with the given key value.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP24.HTM" TARGET="CNTFRAME">RemoveAt</A></TD>
+<TD CLASS="TableLightDesc">
+	Remove the item from the table at the given index position.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP25.HTM" TARGET="CNTFRAME">Clone</A></TD>
+<TD CLASS="TableLightDesc">
+	Make a copy of this table.  The copy is a complete copy, not just a
+	reference to the same table.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP26.HTM" TARGET="CNTFRAME">CopyTo</A></TD>
+<TD CLASS="TableLightDesc">
+	Copy all items in the table into an array.  Items are copied into the 
+	array in their current order.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP27.HTM" TARGET="CNTFRAME">IndexOf</A></TD>
+<TD CLASS="TableLightDesc">
+	Returns the position of the passed item in the table.  NOTE: this
+	function is relatively inefficient and should not be called repeatedly.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP28.HTM" TARGET="CNTFRAME">ResetScramble</A></TD>
+<TD CLASS="TableLightDesc">
+	Reset the random number generator used to scramble the order of the items
+	in the table.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP29.HTM" TARGET="CNTFRAME">ScrambleOrder</A></TD>
+<TD CLASS="TableLightDesc">
+	Scramble the order of the items in the list. This affects the order returned
+	by integer index values and the enumerator.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP30.HTM" TARGET="CNTFRAME">GetEnumerator</A></TD>
+<TD CLASS="TableLightDesc">
+	Get an enumerator for the cIndexHashTable.
+<P>
+</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP31.HTM" TARGET="CNTFRAME">SetRandomRange</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP32.HTM" TARGET="CNTFRAME">ThrowKeyIndexException</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP33.HTM" TARGET="CNTFRAME">IncrementChangeFlag</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP34.HTM" TARGET="CNTFRAME">KeysByIndex</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP35.HTM" TARGET="CNTFRAME">ScrambleRandom</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP36.HTM" TARGET="CNTFRAME">AddNum</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR><TR height=20>
+<TD width=20>&nbsp;</TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD CLASS="TableLightDesc"><A HREF="CWP37.HTM" TARGET="CNTFRAME">mvarChangeFlag</A></TD>
+<TD CLASS="TableLightDesc">&nbsp;</TD>
+<TD width=20>&nbsp;</TD>
+</TR></TABLE>
+</BODY>
+</HTML>
