@@ -253,7 +253,7 @@ namespace UIFormARM
                     textBoxNumbYears.Text = numbYears;
 
                     //Connect to landscape XML file to get supercell and K information                       
-                    cXMLCellDataSource landscapeXMLFile = new cXMLCellDataSource(false);
+                    cXMLCellDataSource landscapeXMLFile = new cXMLCellDataSource(true);
                     int totalPathLength = landscapeFile.Length;
                     int landNameLength = landscapeFileItemsLast.Length;
                     string landPath = landscapeFile.Substring(0, totalPathLength - landNameLength);
