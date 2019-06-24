@@ -40,12 +40,6 @@ namespace CommandLineARM
 
         public static void Main(string[] args)
         {
-            if(args.Length == 0)
-            {
-                Console.Error.WriteLine("Settings file required as arguments");
-                return;
-            }
-
             MainClass main = new MainClass();
             Console.WriteLine("Starting");
             main.LoadSettingsFile(args);
@@ -59,7 +53,7 @@ namespace CommandLineARM
         {
             //System.Diagnostics.Debug.WriteLine("");
             //System.Diagnostics.Debug.WriteLine("Form1.cs: btn_LoadSettingsFile_Click()");
-            pathArg[0] = args[0];
+            pathArg[0] = ".";
             Debug.WriteLine("settingsFile =++++++++++++++++++++++++++++++++++++++++++++++++++++++++ " + pathArg[0]);
             DataSet returnSettingsData = null;
             string filePath = string.Empty;

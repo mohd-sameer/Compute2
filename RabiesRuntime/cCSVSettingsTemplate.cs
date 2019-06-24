@@ -17,13 +17,13 @@ namespace RabiesRuntime
         {
             DataSet data = new DataSet();
 
-            AddCSVToDataSet(data, "AnimalBehaviour", "/home/jarno/parameters_ARM_version08_AnimalBehaviour.csv");
-            AddCSVToDataSet(data, "AnimalBiology", "/home/jarno/parameters_ARM_version08_AnimalBiology.csv");
-            AddCSVToDataSet(data, "DiseaseControl", "/home/jarno/parameters_ARM_version08_DiseaseControl.csv");
-            AddCSVToDataSet(data, "Epidemiology", "/home/jarno/parameters_ARM_version08_Epidemiology.csv");
-            AddCSVToDataSet(data, "RunSettings", "/home/jarno/parameters_ARM_version08_RunSettings.csv");
-            AddCSVToDataSet(data, "WinterSeverity", "/home/jarno/parameters_ARM_version08_WinterSeverity.csv");
-            AddCSVToDataSet(data, "ValidationRules", "/home/jarno/parameters_ARM_version08_ValidationRules.csv");
+            AddCSVToDataSet(data, "AnimalBehaviour", "csv/AnimalBehaviour.csv");
+            AddCSVToDataSet(data, "AnimalBiology", "csv/AnimalBiology.csv");
+            AddCSVToDataSet(data, "DiseaseControl", "csv/DiseaseControl.csv");
+            AddCSVToDataSet(data, "Epidemiology", "csv/Epidemiology.csv");
+            AddCSVToDataSet(data, "RunSettings", "csv/RunSettings.csv");
+            AddCSVToDataSet(data, "WinterSeverity", "csv/WinterSeverity.csv");
+            AddCSVToDataSet(data, "ValidationRules", "csv/ValidationRules.csv");
 
             return data;
         }
