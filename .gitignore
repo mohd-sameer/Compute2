@@ -1,0 +1,17 @@
+Random/bin
+RngStream/bin
+RabiesModelCore/bin
+UIFormARM/bin
+FoxModelLibrary/bin
+IndexedHashTable/bin
+RabiesRuntime/bin
+CommandLineARM/bin
+Random/obj
+RngStream/obj
+RabiesModelCore/obj
+UIFormARM/obj
+FoxModelLibrary/obj
+IndexedHashTable/obj
+RabiesRuntime/obj
+CommandLineARM/obj
+.vs

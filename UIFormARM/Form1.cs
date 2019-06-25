@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;//required to connect with Excel file
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -82,7 +81,7 @@ namespace UIFormARM
                         //Code to put Excel worksheets in datatables and then 1 dataset alphabetically                      
 
                         //Make excel settings file into dataset object                                            
-                        returnSettingsData = cExcelSettingsTemplate.Parse(filePath);
+                        returnSettingsData = cCSVSettingsTemplate.Parse(filePath);
 
                         //Retrieve setttings values in the dataset: Table(worksheet), row and column
                         String parameterSetName = returnSettingsData.Tables[4].Rows[0][1].ToString(); //YM
@@ -95,8 +94,8 @@ namespace UIFormARM
 
                         String landscapeFile = returnSettingsData.Tables[4].Rows[3][1].ToString();//YM
                         //String landscapeFile = returnSettingsData.Tables[6].Rows[3][1].ToString();//YM
-                        Char delimiter = '\\';
-                        String[] landscapeFileItems = landscapeFile.Split(delimiter);
+                        Char[] delimiters = { '\\', '/' };
+                        String[] landscapeFileItems = landscapeFile.Split(delimiters);
                         String landscapeFileItemsLast = landscapeFileItems.Last();
                         textBoxLandscapeFile.Text = landscapeFileItemsLast;
 
@@ -114,7 +113,7 @@ namespace UIFormARM
                             //String populationFile = returnSettingsData.Tables[6].Rows[7][1].ToString();//YM
                             //Debug.WriteLine("populationFile = " + populationFile);
                             //Char delimiter = '\\';
-                            String[] populationFileItems = populationFile.Split(delimiter);
+                            String[] populationFileItems = populationFile.Split(delimiters);
                             String populationFileItemsLast = populationFileItems.Last();
                             //Debug.WriteLine("populationFileItemsLast = " + populationFileItemsLast);
                             textBoxPopulationFile.Text = populationFileItemsLast;
@@ -128,7 +127,7 @@ namespace UIFormARM
                         textBoxNumbYears.Text = numbYears;
 
                         //Connect to landscape XML file to get supercell and K information                       
-                        cXMLCellDataSource landscapeXMLFile = new cXMLCellDataSource(false);                                                
+                        cXMLCellDataSource landscapeXMLFile = new cXMLCellDataSource(true);                                                
                         int totalPathLength = landscapeFile.Length;
                         int landNameLength = landscapeFileItemsLast.Length;                        
                         string landPath = landscapeFile.Substring(0, totalPathLength - landNameLength);
@@ -212,7 +211,7 @@ namespace UIFormARM
                     //Code to put Excel worksheets in datatables and then 1 dataset alphabetically                      
 
                     //Make excel settings file into dataset object                                            
-                    returnSettingsData = cExcelSettingsTemplate.Parse(pathArg[0]);
+                    returnSettingsData = cCSVSettingsTemplate.Parse(pathArg[0]);
 
                     //Retrieve setttings values in the dataset: Table(worksheet), row and column
                     String parameterSetName = returnSettingsData.Tables[4].Rows[0][1].ToString();
@@ -224,8 +223,8 @@ namespace UIFormARM
 
 
                     String landscapeFile = returnSettingsData.Tables[4].Rows[3][1].ToString();
-                    Char delimiter = '\\';
-                    String[] landscapeFileItems = landscapeFile.Split(delimiter);
+                    Char[] delimiters = { '\\', '/' };
+                    String[] landscapeFileItems = landscapeFile.Split(delimiters);
                     String landscapeFileItemsLast = landscapeFileItems.Last();
                     textBoxLandscapeFile.Text = landscapeFileItemsLast;
 
@@ -242,7 +241,7 @@ namespace UIFormARM
                         String populationFile = returnSettingsData.Tables[4].Rows[7][1].ToString();
                         //Debug.WriteLine("populationFile = " + populationFile);
                         //Char delimiter = '\\';
-                        String[] populationFileItems = populationFile.Split(delimiter);
+                        String[] populationFileItems = populationFile.Split(delimiters);
                         String populationFileItemsLast = populationFileItems.Last();
                         //Debug.WriteLine("populationFileItemsLast = " + populationFileItemsLast);
                         textBoxPopulationFile.Text = populationFileItemsLast;
@@ -254,7 +253,7 @@ namespace UIFormARM
                     textBoxNumbYears.Text = numbYears;
 
                     //Connect to landscape XML file to get supercell and K information                       
-                    cXMLCellDataSource landscapeXMLFile = new cXMLCellDataSource(false);
+                    cXMLCellDataSource landscapeXMLFile = new cXMLCellDataSource(true);
                     int totalPathLength = landscapeFile.Length;
                     int landNameLength = landscapeFileItemsLast.Length;
                     string landPath = landscapeFile.Substring(0, totalPathLength - landNameLength);

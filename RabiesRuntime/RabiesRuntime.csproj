@@ -68,6 +68,7 @@
     <Compile Include="cStrategyReader.cs" />
     <Compile Include="cVaccineStrategyReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="cCSVSettingsTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IndexedHashTable\IndexedHashTable.csproj">

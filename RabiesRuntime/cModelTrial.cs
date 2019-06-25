@@ -378,7 +378,7 @@ namespace RabiesRuntime
                 DataTable dtDiseaseCtrl = mvarTrialSettings.Tables[2];
                 DataTable dtEpi = mvarTrialSettings.Tables[3];
                 DataTable dtRunInfo = mvarTrialSettings.Tables[4];
-                DataTable dtWinter = mvarTrialSettings.Tables[6];
+                DataTable dtWinter = mvarTrialSettings.Tables[5];
                                 
                 // indicate start of run in the Log file
                 mvarAppReport.IndicateRunStart(string.Format("{0} - Trial {1}", mvarRunName, mvarTrialNumber.ToString("0000")));
@@ -1440,7 +1440,7 @@ namespace RabiesRuntime
             //System.Diagnostics.Debug.WriteLine("cModelTrial.cs: cWinterTypeList: CreateWinterListExcelTemplate()");
 
             //Put winter severity data from Excel template into a DataTable object
-            DataTable dtWinter = mvarTrialSettings.Tables[6];
+            DataTable dtWinter = mvarTrialSettings.Tables[5];
             /*string winter1 = dtWinter.Rows[14][1].ToString();
             string winter2 = dtWinter.Rows[15][1].ToString();
             string winter3 = dtWinter.Rows[16][1].ToString();
@@ -1606,7 +1606,7 @@ namespace RabiesRuntime
             BG.LoadStaticAnimalDataExcelTemplate(mvarTrialSettings);
 
             // Load winter cull data
-            DataTable dtWinter = mvarTrialSettings.Tables[6];
+            DataTable dtWinter = mvarTrialSettings.Tables[5];
             int WinterCullWeek = Convert.ToInt32(dtWinter.Rows[1][4]);
             //System.Diagnostics.Debug.WriteLine("    WinterCullWeek = " + WinterCullWeek);
 
@@ -2348,7 +2348,7 @@ namespace RabiesRuntime
             DataTable dtDiseaseCtrl = mvarTrialSettings.Tables[2];
             DataTable dtEpi = mvarTrialSettings.Tables[3];
             DataTable dtRunInfo = mvarTrialSettings.Tables[4];
-            DataTable dtWinter = mvarTrialSettings.Tables[6];
+            DataTable dtWinter = mvarTrialSettings.Tables[5];
 
             // get actual datasource paths
             string dbPath = "";

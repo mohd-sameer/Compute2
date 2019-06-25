@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFBD36B2-FA66-4064-99C6-46A2A043EC52}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CommandLineARM</RootNamespace>
+    <AssemblyName>CommandLineARM</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FoxModelLibrary\FoxModelLibrary.csproj">
+      <Project>{D55AEB3D-737B-4891-86EA-F579F44FFB04}</Project>
+      <Name>FoxModelLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IndexedHashTable\IndexedHashTable.csproj">
+      <Project>{C8F8232E-BB2E-4EDC-A22B-B098C2BB3F68}</Project>
+      <Name>IndexedHashTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RabiesRuntime\RabiesRuntime.csproj">
+      <Project>{C1AC5A1F-4D22-49FC-A3A2-66E133D9F822}</Project>
+      <Name>RabiesRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RabiesModelCore\RabiesModelCore.csproj">
+      <Project>{3C5522BB-5AFD-4D0B-9A26-8316FC6277D3}</Project>
+      <Name>RabiesModelCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Random\Random.csproj">
+      <Project>{E08E2B76-60B1-4485-A720-D0D9C3375A5F}</Project>
+      <Name>Random</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

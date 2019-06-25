@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Data.OleDb;//required to connect with Excel file
 using System.Text;
 using System.Data;
 using System.Net;
@@ -345,7 +344,7 @@ namespace RabiesRuntime
                 //System.Diagnostics.Debug.WriteLine("    mvarRunDefinitions.Count = " + cnt);
                 
                 // Define dataset of run definitions                
-                DataSet runDS = cExcelSettingsTemplate.Parse(mvarRunDefinitions[0]);                
+                DataSet runDS = cCSVSettingsTemplate.Parse(mvarRunDefinitions[0]);                
 
                 //Build the threads for running trials
                 ModelTrials = new List<cModelTrial>();
