@@ -1,0 +1,16 @@
+﻿Boolean
+TRUE
+FALSE
+
+Winter type
+VerySevere
+Severe
+Normal
+Mild
+VeryMild
+
+Diease control strategy type
+Cull
+Vaccination
+Fertility_Control
+Combined

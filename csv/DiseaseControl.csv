@@ -1,0 +1,11 @@
+﻿Setting,Value,,,,
+Vaccine effective period,416,,,,
+Fertility control effective period,52,,,,
+Path,,,,,
+,,,,,
+,,,,,
+Strategy Name,HexCellID,Type,Year,Week,Level
+,,Fertility_Control,,,
+,,Vaccination,,,
+,,Fertility_Control,,,
+,,Combined,,,
