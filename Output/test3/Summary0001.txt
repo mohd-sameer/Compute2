@@ -1,0 +1,13 @@
+Run name: test3
+Trial number: 0001
+Start date and time: 2019-Jun-27 04:12:04
+Initial random seed value for all streams: 836895768
+Stream ID for generator used for this trial: 0
+Intended run length: 10 years
+Cell datasource: Output
+Animal datasource: NA; population was grown from Adam & Eve
+
+
+**************** Trial Outcome ***************
+Outcome: Completed at 2019-Jun-27 04:13:39
+Duration of trial: 94.98 seconds

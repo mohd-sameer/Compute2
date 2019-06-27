@@ -1,0 +1,1 @@
+Trial	ID	CellID	Year	Week	Incubation_Period	Infectious_Period	Parent_ID	InfectingAnimal_ID	Age	Gender	Movement_History	Was Fatal

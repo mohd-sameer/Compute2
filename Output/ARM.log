@@ -1,0 +1,23 @@
+Thursday, 27 June 2019 14:42:55: Application started...
+Thursday, 27 June 2019 14:42:55: Rabies Model v.1.0.7117.24720 - Start Time Jun-27-2019 14:42:55
+Thursday, 27 June 2019 14:42:55: ${AuthorCopyright}
+Thursday, 27 June 2019 14:42:55: test3 - Trial 0001-> started...
+Thursday, 27 June 2019 14:42:56: Error - Error occured in test3 - Trial 0001. Cell datasource "ORMlandscape.xml" not found!!.
+Thursday, 27 June 2019 14:42:56: Stack Trace -   at Fox.cXMLCellDataSource.Connect () [0x000a9] in <33d7e1bb2f354dbc962d69a1cb4b7350>:0 
+  at RabiesRuntime.cModelTrial.OpenCellDatasource (System.String DatasourceName) [0x00053] in <6dbeefbe2d31490caa8cf442cc5a1b13>:0 
+  at RabiesRuntime.cModelTrial.RunModelTrialExcelTemplate () [0x001e0] in <6dbeefbe2d31490caa8cf442cc5a1b13>:0 
+Thursday, 27 June 2019 14:43:00: Rabies Model Run Completed Normally
+Thursday, 27 June 2019 14:57:34: Application started...
+Thursday, 27 June 2019 14:57:34: Rabies Model v.1.0.7117.24720 - Start Time Jun-27-2019 14:57:34
+Thursday, 27 June 2019 14:57:34: ${AuthorCopyright}
+Thursday, 27 June 2019 14:57:34: test3 - Trial 0001-> started...
+Thursday, 27 June 2019 14:57:35: Created animal datasource Output/test3/test30001.xml
+Thursday, 27 June 2019 14:57:36: test3 - Trial 0001-> completed. RunTime 0min 1sec
+Thursday, 27 June 2019 14:57:39: Rabies Model Run Completed Normally
+Thursday, 27 June 2019 16:12:04: Application started...
+Thursday, 27 June 2019 16:12:04: Rabies Model v.1.0.7117.24720 - Start Time Jun-27-2019 16:12:04
+Thursday, 27 June 2019 16:12:04: ${AuthorCopyright}
+Thursday, 27 June 2019 16:12:04: test3 - Trial 0001-> started...
+Thursday, 27 June 2019 16:13:32: Created animal datasource Output/test3/test30001.xml
+Thursday, 27 June 2019 16:13:39: test3 - Trial 0001-> completed. RunTime 1min 34sec
+Thursday, 27 June 2019 16:13:42: Rabies Model Run Completed Normally
