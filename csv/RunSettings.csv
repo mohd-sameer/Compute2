@@ -1,8 +1,8 @@
 Setting,Value
 Name of parameter set,test3
 Comments,Grow test population
-Output Folder,Output
-Landscape,ORMlandscape.xml
+Output Folder,C:\coop\project\Output
+Landscape,C:\coop\project\ORMlandscape.xml
 Grow population,TRUE
 Genetic markers (Adam),M
 Genetic markers (Eve),M
