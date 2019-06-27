@@ -2,7 +2,7 @@ Setting,Value
 Name of parameter set,test3
 Comments,Grow test population
 Output Folder,C:\coop\project\Output
-Landscape,C:\coop\SquareTestArea.xml
+Landscape,SquareTestArea.xml
 Grow population,TRUE
 Genetic markers (Adam),M
 Genetic markers (Eve),M
